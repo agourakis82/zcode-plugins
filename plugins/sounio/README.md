@@ -18,6 +18,6 @@ The `sounio-development` skill is also available when working on Sounio source o
 
 ## Permissions and side effects
 
-This plugin contains only prompt files: no executable script, hook, MCP server, bundled compiler, or credential requirement. The check command asks ZCode to execute the local compiler on the named file; review that shell action before approving it. The plugin does not install software, send data to a network service, or intentionally edit project files. The compiler may create temporary files according to its own behavior.
+This plugin contains only prompt files: no executable script, hook, MCP server, bundled compiler, or credential requirement. The check command asks ZCode to execute the local compiler on the named file; review that shell action before approving it. The plugin itself does not install software, send data to a network service, or edit project files. The selected compiler or wrapper may create or update temporary files and project-local generated artifacts. In particular, Sounio's `bin/souc` may materialize `bin/madaros-linux-x86_64` and `bin/.madaros-linux-x86_64.verified` in the checkout during startup.
 
 The plugin text is original and released under Apache-2.0. Sounio itself is a separate Apache-2.0 project at [Sounio-lang/sounio](https://github.com/Sounio-lang/sounio).

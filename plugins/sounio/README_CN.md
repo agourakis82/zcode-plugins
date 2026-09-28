@@ -18,6 +18,6 @@
 
 ## 权限与副作用
 
-本插件只包含提示文件：没有可执行脚本、Hook、MCP 服务、附带的编译器或凭据要求。检查命令会请 ZCode 对指定文件运行本地编译器；执行前请审阅该 Shell 操作。本插件不安装软件、不向网络服务发送数据，也不会有意修改项目文件。编译器自身可能按其行为创建临时文件。
+本插件只包含提示文件：没有可执行脚本、Hook、MCP 服务、附带的编译器或凭据要求。检查命令会请 ZCode 对指定文件运行本地编译器；执行前请审阅该 Shell 操作。插件本身不安装软件、不向网络服务发送数据，也不修改项目文件。所选编译器或包装器可能创建或更新临时文件及项目内的生成产物。特别是 Sounio 的 `bin/souc` 启动时可能在仓库中生成 `bin/madaros-linux-x86_64` 和 `bin/.madaros-linux-x86_64.verified`。
 
 插件文本为原创，采用 Apache-2.0 许可。Sounio 是独立的 Apache-2.0 项目，地址为 [Sounio-lang/sounio](https://github.com/Sounio-lang/sounio)。
