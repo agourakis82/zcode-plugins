@@ -12,7 +12,7 @@
   "plugins": [
     {
       "name": "sounio",
-      "source": "./plugins/sounio",
+      "source": "./external_plugins/sounio",
       "description": "Check Sounio source files with an existing local compiler and report the exact evidence level.",
       "description_i18n": {
         "en": "Check Sounio source files with an existing local compiler and report the exact evidence level.",
